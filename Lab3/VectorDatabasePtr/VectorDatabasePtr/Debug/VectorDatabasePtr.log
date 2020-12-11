@@ -1,7 +1,0 @@
-﻿  vectorDatabasePtr.cpp
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(10,6): warning C4101: 'toLower': unreferenced local variable
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(20,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(56,2): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(89,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(97,20): warning C4018: '<': signed/unsigned mismatch
-  VectorDatabasePtr.vcxproj -> C:\Users\bruh1\source\repos\VectorDatabasePtr\Debug\VectorDatabasePtr.exe
