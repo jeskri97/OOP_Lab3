@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <vector>
+#include <fstream>
 #include <string>
 #include <algorithm>
 
@@ -100,11 +101,41 @@ void print(std::vector<std::string>* data) {
 	printf("\n");
 }
 
+void save(std::vector<std::string>* data) {
+	std::ofstream fout;
+	fout.open("saveData.txt", std::ios::out);
+	if (fout.is_open()) {
+		printf("\nSaving data\n");
+		for (int i = 0; i < data->size(); i++) {
+			fout << (*data)[i];
+			fout << "\n";
+		}
+		fout.close();
+		printf("Saving DONE\n");
+	}
+}
+
+void load(std::vector<std::string>* data) {
+	data->clear();
+	std::fstream fin;
+	fin.open("saveData.txt", std::ios::in);
+	if (fin.is_open()) {
+		printf("\nLoading data\n");
+		int index = 0;
+		while (!fin.eof()) {
+			std::string text;
+			std::getline(fin, text);
+			data->push_back(text);
+		}
+		printf("Loading DONE\n");
+	}
+}
+
 void menuLoop(std::vector<std::string>* data) {
 	char input;
 	bool programOn = true;
 	while (programOn) {
-		printf("\nMenu\n\n1: Initialise Database\n2: Insert\n3: Search\n4: Delete\n5: Print\n6: QUIT\n\nInput: ");
+		printf("\nMenu\n\n1: Initialise Database\n2: Insert\n3: Search\n4: Delete\n5: Print\n6: Save\n7: Load\n0: QUIT\n\nInput: ");
 		std::cin >> input;
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		switch (input)
@@ -125,6 +156,12 @@ void menuLoop(std::vector<std::string>* data) {
 			print(data);
 			break;
 		case '6':
+			save(data);
+			break;
+		case '7':
+			load(data);
+			break;
+		case '0':
 			printf("\nGood Bye\n");
 			programOn = false;
 			break;
@@ -137,9 +174,9 @@ void menuLoop(std::vector<std::string>* data) {
 
 int main(void) {
 	std::vector<std::string> *data = new std::vector<std::string>();
-	//setWord(data, "teemu");
-	//setWord(data, "teppo");
-	//setWord(data, "kalle");
-	//setWord(data, "en kort mening");
+	setWord(data, "teemu");
+	setWord(data, "teppo");
+	setWord(data, "kalle");
+	setWord(data, "en kort mening");
 	menuLoop(data);
 }

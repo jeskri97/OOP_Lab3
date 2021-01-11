@@ -1,7 +1,8 @@
 ﻿  vectorDatabasePtr.cpp
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(10,6): warning C4101: 'toLower': unreferenced local variable
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(20,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(56,2): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(89,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\bruh1\source\repos\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(97,20): warning C4018: '<': signed/unsigned mismatch
-  VectorDatabasePtr.vcxproj -> C:\Users\bruh1\source\repos\VectorDatabasePtr\Debug\VectorDatabasePtr.exe
+C:\Users\bruh1\Documents\OOP\Lab3\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(11,6): warning C4101: 'toLower': unreferenced local variable
+C:\Users\bruh1\Documents\OOP\Lab3\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(21,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\bruh1\Documents\OOP\Lab3\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(57,2): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
+C:\Users\bruh1\Documents\OOP\Lab3\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(90,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\bruh1\Documents\OOP\Lab3\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(98,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\bruh1\Documents\OOP\Lab3\VectorDatabasePtr\VectorDatabasePtr\vectorDatabasePtr.cpp(109,21): warning C4018: '<': signed/unsigned mismatch
+  VectorDatabasePtr.vcxproj -> C:\Users\bruh1\Documents\OOP\Lab3\VectorDatabasePtr\Debug\VectorDatabasePtr.exe
